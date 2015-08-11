@@ -1,5 +1,3 @@
-console.log("app found");
-
 var app = angular.module('app', ['ngRoute']);
 
 
