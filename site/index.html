@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My HTML File</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
+	<script src="app.js"></script>
+	<script src="directory/directoryCtrl.js"></script>
+	<script src="files/filesCtrl.js"></script>
+</head>
+<body>
+
+	<div class="container-fluid" style="text-align:center">
+		<h2>Clufflink</h2>
+	</div>
+	<div class="container-fluid" style="text-align:center">
+		<a href="#/directory">directory</a>
+		<a href="#/files">files</a>
+	</div>
+	
+	<div class="container-fluid" ng-view></div>
+
+</body>
+</html>
