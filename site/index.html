@@ -5,17 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>My HTML File</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
 	<script src="app.js"></script>
+	<script src="rootCtrl.js"></script>
 	<script src="directory/directoryCtrl.js"></script>
 	<script src="files/filesCtrl.js"></script>
+	<script src="person/personCtrl.js"></script>
+	<script src="family/familyCtrl.js"></script>
+	<script src="data.js"></script>
 </head>
 
-<body>
+<body ng-controller="rootCtrl">
 
 	<div class="container-fluid" style="text-align:center">
-		<h2>Clufflink</h2>
+		<h2 ng-click="changeView('home')" style="cursor:pointer">Clufflink</h2>
 	</div>
 	<div class="container-fluid" style="text-align:center">
 		<a href="#/directory">directory</a>
