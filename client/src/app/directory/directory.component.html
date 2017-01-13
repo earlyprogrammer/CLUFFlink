@@ -1,0 +1,20 @@
+
+<div>
+	<p><label> Search: <input [(ngModel)]="searchText" placeholder="filter directory"/> </label></p>
+</div>
+<div>
+	<h4> Families </h4>
+	<div *ngIf="families">
+		<div *ngFor="let family of families | filter:[searchText,'family']" (click)="gotoFamily(family)">
+			{{family.family}}
+		</div>
+	</div>
+</div>
+<div>
+	<h4> People </h4>
+	<div *ngIf="people">
+		<div *ngFor="let person of people | filter:[searchText,'name']" (click)="gotoPerson(person)">
+			{{person.name}}
+		</div>
+	</div>
+</div>

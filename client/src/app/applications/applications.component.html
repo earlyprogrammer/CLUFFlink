@@ -1,0 +1,17 @@
+<div>
+	<p> Select an application: </p>
+	<div *ngFor="let application of applications" (click)="selectApplication(application)">
+		{{application}}
+	</div>
+	
+	<p> Who is this? </p>
+	<p><label> Search: <input [(ngModel)]="searchText" placeholder="filter directory"/> </label></p>
+	<div *ngIf="people">
+		<div *ngFor="let person of people | filter:[searchText,'name']" (click)="selectPerson(person)">
+			{{person.name}}
+		</div>
+	</div>
+	
+	<button (click)="judge('accept')">Accept</button>
+	<button (click)="judge('deny')">Deny</button>
+</div>
