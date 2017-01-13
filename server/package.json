@@ -1,0 +1,20 @@
+{
+  "name": "cluffserver",
+  "version": "1.0.0",
+  "description": "server for clufflink",
+  "main": "myServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "crypto": "0.0.3",
+    "express": "^4.14.0",
+    "express-session": "^1.14.2",
+    "node-mysql": "^0.4.2",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0"
+  }
+}
